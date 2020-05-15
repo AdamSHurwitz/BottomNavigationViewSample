@@ -5,4 +5,10 @@
             android:icon="@drawable/ic_home_black_24dp"
             android:contentDescription="@string/cd_home"
             android:title="@string/title_home" />
+
+        <item
+            android:id="@+id/saved"
+            android:icon="@drawable/ic_star_black_24dp"
+            android:contentDescription="@string/cd_saved"
+            android:title="@string/title_saved" />
 </menu>
