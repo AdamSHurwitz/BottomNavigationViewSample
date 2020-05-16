@@ -3,11 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/saved"
+    android:label="@string/title_saved"
     app:startDestination="@id/savedFragment">
 
     <fragment
         android:id="@+id/savedFragment"
-        android:name="com.example.bottomnavigationviewsample.SavedFragment"
-        android:label="fragment_saved"
-        tools:layout="@layout/fragment_saved" />
+        android:name="com.example.bottomnavigationviewsample.MainFragment"
+        android:label="@string/title_saved"
+        tools:layout="@layout/fragment_main">
+        <argument
+            android:name="screenType"
+            android:defaultValue="SAVED"
+            app:argType="com.example.bottomnavigationviewsample.ScreenType" />
+    </fragment>
 </navigation>
